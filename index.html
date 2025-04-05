@@ -2,25 +2,131 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Sky Hong</title>
     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic img { max-width: 150px; height: auto; box-shadow: 0 0 8px rgba(0,0,0,0.2); }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #000; text-decoration: none; border-bottom: 1px dotted #000; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font: 16px Helvetica, Sans-Serif;
+            line-height: 1.5;
+            background: url(images/noise.jpg);
+            padding: 20px;
+        }
+        .clear {
+            clear: both;
+        }
+        #page-wrap {
+            max-width: 100%;
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto 60px;
+        }
+        #pic {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        #pic img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
+        h2 {
+            font-size: 1.25em;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif;
+            font-size: 1em;
+            color: #999;
+            font-weight: normal;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px dotted #000;
+        }
+        a:hover {
+            border-bottom-style: solid;
+            color: black;
+        }
+        ul {
+            margin: 0 0 32px 17px;
+        }
+        #objective {
+            max-width: 100%;
+            float: none;
+            margin-bottom: 20px;
+        }
+        #objective p {
+            font-family: Georgia, Serif;
+            font-style: italic;
+            color: #666;
+        }
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 25%;
+            float: left;
+            border-right: 1px solid #999;
+            margin-bottom: 10px;
+        }
+
+        dd {
+            width: 70%;
+            float: right;
+            margin-bottom: 10px;
+        }
+
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #pic {
+                float: none;
+                text-align: center;
+                margin: 0 auto 16px auto;
+            }
+
+            dt, dd {
+                float: none;
+                width: 100%;
+                text-align: left;
+                padding: 0;
+                border: none;
+            }
+
+            #objective {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -28,15 +134,15 @@
     <div id="page-wrap">
         <div id="contact-info" class="vcard">
             <h1 class="fn">Sky Hong 洪軾凱</h1>
+            <div id="pic">
+                <img src="skyhong.png" alt="Sky Hong's Photo" />
+            </div>
             <p>
-                常用ID: skyhong.tw, skyhong2002, Skychopath<br>
+                Handle: skyhong.tw, skyhong2002, Skychopath<br>
                 Cell: <span class="tel">+886970736855</span><br>
                 Email: <a class="email" href="mailto:me@skyhong.tw">me@skyhong.tw</a><br>
                 Telegram: <a href="https://t.me/skyhong2002">Click Me</a>
             </p>
-        </div>
-        <div id="pic">
-            <img src="skyhong.png" alt="Sky Hong's Photo" />
         </div>
         <div id="objective">
             <p>
@@ -75,12 +181,13 @@
                     <li>Feburary 2025 ~ Est. June 2025<br>
                         新世代兒少數位行為及價值觀研究計畫 NSTC113-2420-H-305-001-MY3<br>
                         中研院 國科會計畫獎助生</li>
+                    <li>Feburary 2024 ~ June 2024<br>
+                        OCF 開放文化基金會 開放科技倡議 實習生</li>
                     <li>September 2023 ~ June 2024<br>
                         紀博文教授 程式設計（一）、（二）<br>
                         教學助理（112-1 傑出教學助理）</li>
                     <li>July 2022 ~ October 2022<br>
-                        民生公共物聯網資料應用教材 (pyCIOT) 編製與推廣<br>
-                        中研院 研究型助理</li>
+                        中研院民生公共物聯網資料應用教材 (pyCIOT) 編製與推廣 研究型助理</li>
                 </ul>
             </dd>
             <dd class="clear"></dd>
@@ -209,8 +316,8 @@
                 <ul>
                     <li>Nov 19 - 北藝貢丸下ㄉ Dr. Blue 街頭演出</li>
                     <li>Jul 28-30 - 臺灣口琴音樂節 2023 <a href="https://youtu.be/okfP4SPU_Ac" target="_blank">小合奏公開組 首獎</a></li>
-                    <li>Jul 1 - 臺大管校友團第22季定期音樂會</li>
-                    <li>Jun 17 - 臺大藍聲口琴社第71屆成果發表會《琴韻藍聲》</li>
+                    <li>Jul 1 - 臺大管校友團第 22 季定期音樂會</li>
+                    <li>Jun 17 - 臺大藍聲口琴社第 71 屆成果發表會《琴韻藍聲》</li>
                 </ul>
                 <h2>2022</h2>
                 <ul>
