@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% TemplateAuthor : Sourabh Bajaj
+% Edited by: Sky Hong
+% License : MIT
+%------------------------
+
+% \documentclass{ctexart}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://cv.skyhong.tw}{\Large Sky Shih-Kai Hong}} & Email : \href{mailto:me@skyhong.tw}{me@skyhong.tw}\\
+  \href{https://skyhong.tw}{skyhong.tw} \quad \href{https://github.com/skyhong2002}{github.com/skyhong2002} & Mobile : +886-970-736-855 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+  {National Yang Ming Chiao Tung University (NYCU)}{Hsinchu, Taiwan}
+  {M.S. in Data Science and Engineering (IDS\&E); Advisor: Prof. Grace Yu-Chun Yen}{Jun 2025 -- Expected 2027}
+  \resumeItemListStart
+      \resumeItem{Publication (R\&R)}
+        {Second author on an ACM CHI 2026 full paper in revise-and-resubmit; contributed to research iteration including study design and system prototyping.}
+      \resumeItem{Teaching / Mentoring (Capstone)}
+        {TA for \textit{Multimedia and Human-Computer Interaction Capstone} (Prof. Yen, Prof. Chang); mentored 40+ students across 8 teams with ongoing technical/design reviews.}
+  \resumeItemListEnd
+  % \resumeItemListStart
+  %   \resumeItem{Publication (Under Review)}
+  %     {Second author on a full paper under review at ACM CHI 2026 (currently in revise-and-resubmit stage); gained deep exposure to CHI-style research workflow and iteration.}
+  %   \resumeItem{Teaching / Mentoring (Capstone)}
+  %     {Teaching Assistant for \textit{Multimedia and Human-Computer Interaction Capstone} (co-taught by Prof. Grace Yu-Chun Yen and Prof. Stanley Yung-Ju Chang); mentored 40+ students across 8 project teams with continuous technical and design feedback.}
+  %   \resumeItem{Research Lead (In Preparation)}
+  %     {Leading a student research group on ``Private $\rightarrow$ Public'' idea transition; driving study design and prototyping, targeting ACM CHI 2026 Extended Abstract submission.}
+  % \resumeItemListEnd
+
+    \resumeSubheading
+  {National Taiwan Normal University (NTNU)}{Taipei, Taiwan}
+  {B.S. in Computer Science and Information Engineering (CSIE)}{Sep 2021 -- Jun 2025}
+  \resumeItemListStart
+    \resumeItem{Honors \& academics}
+      {Outstanding Student Award (AY112; 1/department); GPA 3.82; 159 credits; EMI-certified (E1, 18 EMI credits); Educational Program for Secondary School Teachers (IT).}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Institute of Information Science, Academia Sinica (Hinagiku Team)}{Taipei, Taiwan}
+      {Research Grant Student, Project Manager \& Researcher --- Prof. Ling-Jyh Chen}{Feb 2025 -- Jun 2025}
+      \resumeItemListStart
+        \resumeItem{Leadership \& execution}
+          {Led 6+ developers and drove delivery via 60+ issues and 200+ PRs; owned roadmap, task breakdown, and issue board operations.}
+        \resumeItem{Stakeholder-driven iteration}
+          {Ran 10+ sessions with teachers/stakeholders; validated Think-Pair-Share (TPS) end-to-end and translated classroom constraints into shippable features.}
+        \resumeItem{System \& stack}
+          {Real-time discussion support with voice transcription/analysis; SvelteKit, Firebase (Firestore/Auth) on GCP, GCS/Cloudflare R2, Genkit LLM (multi-provider). (\href{https://github.com/hinagiku-dev/Hinagiku}{GitHub} $|$ \href{https://hackmd.io/@hinagiku/wiki}{Wiki})}
+      \resumeItemListEnd
+
+
+    % \resumeSubheading
+    %   {Open Culture Foundation (OCF)}{Taipei, Taiwan}
+    %   {Open Technology Advocacy Intern}{Feb 2024 -- Jun 2024}
+    %   \resumeItemListStart
+    %     \resumeItem{Open data research}
+    %       {Researched policy/civic-tech questions and open-data practices; turned ambiguous questions into structured analysis and recommendations. (\href{https://skyhong.tw/parliament-opendata/}{Parliament open data Article}) }
+    %     \resumeItem{Publication \& dissemination}
+    %       {Published technical write-ups and shared findings with the community to collect feedback and refine conclusions. (\href{https://skyhong.tw/ocf-intern/}{Intern reflection}) }
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {National Taiwan Normal University (NTNU)}{Taipei, Taiwan}
+      {Teaching Assistant, Programming I \& II (C) --- Prof. Po-Wen Chi}{Sep 2023 -- Jun 2024}
+      \resumeItemListStart
+        \resumeItem{Teaching excellence at scale}
+  {Supported 80--120 students in C programming (pointers, strings, structs, memory); earned 4.9/5 student rating (highest among 5 TAs) and received a university-wide Outstanding TA award; co-ran 11 optional TA Hours (230+ attendances).}
+        \resumeItem{Automation \& assessment}
+          {Authored exam/assignment problems and built Bash/Makefile-based autograding pipelines to standardize builds, run test cases, and streamline grading at scale.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{UniCourse --- Cross-University Course Search Database (Open Data)}
+      {Built a course search platform; implemented data collection/normalization and delivered a searchable UI. Presented at COSCUP 2023. (\href{https://www.youtube.com/watch?v=HDkun4COf2k}{Talk})}
+    \resumeSubItem{learnCIoT --- Public IoT Data Learning Materials (Academia Sinica)}
+  {Contributed to a public educational site for Taiwan Civil IoT data; wrote Chapter 3 ``Data Access'' materials and improved technical documentation for reproducible, hands-on exercises. (\href{https://learnciot.github.io/ch3/ch3.1/}{Content})}
+
+\resumeSubItem{Bridging the Recursive Public --- OpenAI ``Democratic Inputs to AI'' (vTaiwan)}
+  {Represented vTaiwan in an OpenAI-funded international deliberation project (with Chatham House); joined cross-team workshops at OpenAI HQ to exchange governance process designs and synthesize learnings. (\href{https://vtaiwan-openai-2023.vercel.app/}{Site})}
+
+
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements and Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Macronix Science Award (19th) --- Excellence Award (Top 20/661)} 
+      {Awarded for academic impact.}
+    \resumeSubItem{Founder \& Lead, Google Developer Student Club (GDSC) NTNU}
+      {Led a 24-member team; organized study groups, student-led courses, and industry exchange events with 1000+ total attendances in the first year.}
+    \resumeSubItem{Network \& System Administration (NTU CSIE) --- Hands-on Infra Labs}
+      {Placed 1st in the final practical exam among 21 teams; built VMs (virsh), configured firewall rules, DNS, NFS, and LDAP-based account management.}
+    \resumeSubItem{Legacy Web Server Modernization --- Ubuntu/WordPress}
+      {Upgraded a 7+ year unmaintained NTNU Youth Club self-publication site; added backups, SSL, maintained deployments via Cloudflare \& Oracle Cloud.}
+
+
+
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages}{: Python, C/C++, TypeScript/JavaScript}
+  \resumeSubItem{Systems}{: Linux/Unix, Git, Bash, Makefile, GitHub Actions, REST APIs, basic networking}
+  \resumeSubItem{Cloud/Web}{: GCP, Oracle Cloud, Docker, Firebase (Firestore/Auth), SvelteKit, Cloudflare R2, Genkit}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
