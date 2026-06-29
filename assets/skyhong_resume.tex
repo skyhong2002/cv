@@ -6,7 +6,7 @@
 %------------------------
 
 % \documentclass{ctexart}
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -60,6 +60,17 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
+\newcommand{\publicationItem}[4]{
+  \item\small{
+    \textbf{#1}\\
+    #2\\
+    \textit{#3}
+    \begin{itemize}[leftmargin=1.3em, itemsep=0pt, topsep=1pt]
+      \item #4
+    \end{itemize}\vspace{-4pt}
+  }
+}
+
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -81,22 +92,13 @@
   \resumeSubHeadingListStart
     \resumeSubheading
   {National Yang Ming Chiao Tung University (NYCU)}{Hsinchu, Taiwan}
-  {M.S. in Data Science and Engineering (IDS\&E); Advisor: Prof. Grace Yu-Chun Yen}{Jun 2025 -- Expected 2027}
+  {M.S. in Data Science and Engineering (IDS\&E)}{Jun 2025 -- Expected 2027}
   \resumeItemListStart
-      \resumeItem{Publication (R\&R)}
-        {Second author on an ACM CHI 2026 full paper in revise-and-resubmit; contributed to research iteration including study design and system prototyping.}
+      \resumeItem{Advisors}
+        {Profs. Grace Yu-Chun Yen and Chu-Lan Michael Kao.}
       \resumeItem{Teaching / Mentoring (Capstone)}
         {TA for \textit{Multimedia and Human-Computer Interaction Capstone} (Prof. Yen, Prof. Chang); mentored 40+ students across 8 teams with ongoing technical/design reviews.}
   \resumeItemListEnd
-  % \resumeItemListStart
-  %   \resumeItem{Publication (Under Review)}
-  %     {Second author on a full paper under review at ACM CHI 2026 (currently in revise-and-resubmit stage); gained deep exposure to CHI-style research workflow and iteration.}
-  %   \resumeItem{Teaching / Mentoring (Capstone)}
-  %     {Teaching Assistant for \textit{Multimedia and Human-Computer Interaction Capstone} (co-taught by Prof. Grace Yu-Chun Yen and Prof. Stanley Yung-Ju Chang); mentored 40+ students across 8 project teams with continuous technical and design feedback.}
-  %   \resumeItem{Research Lead (In Preparation)}
-  %     {Leading a student research group on ``Private $\rightarrow$ Public'' idea transition; driving study design and prototyping, targeting ACM CHI 2026 Extended Abstract submission.}
-  % \resumeItemListEnd
-
     \resumeSubheading
   {National Taiwan Normal University (NTNU)}{Taipei, Taiwan}
   {B.S. in Computer Science and Information Engineering (CSIE)}{Sep 2021 -- Jun 2025}
@@ -105,6 +107,15 @@
       {Outstanding Student Award (AY112; 1/department); GPA 3.82; 159 credits; EMI-certified (E1, 18 EMI credits); Educational Program for Secondary School Teachers (IT).}
   \resumeItemListEnd
 
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \publicationItem{Keeping Everyone in the Game: Bringing Ability-Inclusive Family Co-Play to Unmodified Console Games}
+      {Chieh-Yu Wen, \textbf{Sky Shih-Kai Hong}, Jia-Jia Liao, Ruei Ci Lai, Zi-Yun Lai, Shu-Chen Liu, Hsien-Hui Tang, and Mike Y. Chen.}
+      {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (ACM CHI 2026). \href{https://doi.org/10.1145/3772318.3791958}{DOI}}
+      {Contribution: Contributed to research iteration, study design, and system prototype design.}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -151,9 +162,6 @@
   \resumeSubHeadingListStart
     \resumeSubItem{UniCourse --- Cross-University Course Search Database (Open Data)}
       {Built a course search platform; implemented data collection/normalization and delivered a searchable UI. Presented at COSCUP 2023. (\href{https://www.youtube.com/watch?v=HDkun4COf2k}{Talk})}
-    \resumeSubItem{learnCIoT --- Public IoT Data Learning Materials (Academia Sinica)}
-  {Contributed to a public educational site for Taiwan Civil IoT data; wrote Chapter 3 ``Data Access'' materials and improved technical documentation for reproducible, hands-on exercises. (\href{https://learnciot.github.io/ch3/ch3.1/}{Content})}
-
 \resumeSubItem{Bridging the Recursive Public --- OpenAI ``Democratic Inputs to AI'' (vTaiwan)}
   {Represented vTaiwan in an OpenAI-funded international deliberation project (with Chatham House); joined cross-team workshops at OpenAI HQ to exchange governance process designs and synthesize learnings. (\href{https://vtaiwan-openai-2023.vercel.app/}{Site})}
 
@@ -169,19 +177,15 @@
       {Led a 24-member team; organized study groups, student-led courses, and industry exchange events with 1000+ total attendances in the first year.}
     \resumeSubItem{Network \& System Administration (NTU CSIE) --- Hands-on Infra Labs}
       {Placed 1st in the final practical exam among 21 teams; built VMs (virsh), configured firewall rules, DNS, NFS, and LDAP-based account management.}
-    \resumeSubItem{Legacy Web Server Modernization --- Ubuntu/WordPress}
-      {Upgraded a 7+ year unmaintained NTNU Youth Club self-publication site; added backups, SSL, maintained deployments via Cloudflare \& Oracle Cloud.}
-
-
-
   \resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
 \resumeSubHeadingListStart
-  \resumeSubItem{Languages}{: Python, C/C++, TypeScript/JavaScript}
-  \resumeSubItem{Systems}{: Linux/Unix, Git, Bash, Makefile, GitHub Actions, REST APIs, basic networking}
-  \resumeSubItem{Cloud/Web}{: GCP, Oracle Cloud, Docker, Firebase (Firestore/Auth), SvelteKit, Cloudflare R2, Genkit}
+  \resumeSubItem{Languages}{Python, C/C++, TypeScript/JavaScript}
+  \resumeSubItem{Systems}{Linux/Unix, Git, Bash, Makefile, GitHub Actions, REST APIs, basic networking}
+  \resumeSubItem{Cloud/Web}{GCP, Oracle Cloud, Docker, Firebase (Firestore/Auth), SvelteKit, Cloudflare R2, Genkit}
+  \resumeSubItem{Research}{Human-computer interaction, human-AI collaboration, qualitative study ops, IRB/study materials}
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
