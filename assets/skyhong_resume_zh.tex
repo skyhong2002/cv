@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% TemplateAuthor : Sourabh Bajaj
+% Edited by: Sky Hong
+% Traditional Chinese version of skyhong_resume.tex
+% License : MIT
+%------------------------
+
+% \documentclass{ctexart}
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{cmap}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+
+% Traditional Chinese text, e.g. \zh{新文易數}
+\newcommand{\zh}[1]{\begin{CJK}{UTF8}{bsmi}#1\end{CJK}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\publicationItem}[3]{
+  \item\small{
+    \textbf{#1}\\
+    #2\\
+    \textit{#3}\vspace{-4pt}
+  }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% Poor man's bold for CJK glyphs inside \textbf
+\let\origtextbf\textbf
+\renewcommand{\textbf}[1]{\origtextbf{\CJKbold #1\CJKnormal}}
+
+% Full-width colon after item labels
+\renewcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{：#2\vspace{-2pt}}
+  }
+}
+
+\begin{document}
+\begin{CJK}{UTF8}{bsmi}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://cv.skyhong.tw}{\Large 洪軾凱 Sky Shih-Kai Hong}} & Email：\href{mailto:me@skyhong.tw}{me@skyhong.tw}\\
+  \href{https://skyhong.tw}{skyhong.tw} \quad \href{https://github.com/skyhong2002}{github.com/skyhong2002} & 手機：+886-970-736-855 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{學歷}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+  {國立陽明交通大學 數據科學與工程研究所}{新竹}
+  {碩士班}{2025.06 -- 預計 2027}
+  \resumeItemListStart
+      \resumeItem{指導教授}
+        {顏羽君教授、高竹嵐教授；\href{https://nycu-haix.github.io/}{人機互動與創意計算實驗室 (HAIX Lab)}。114 學年度 GPA 4.04/4.30（26 學分）。}
+  \resumeItemListEnd
+    \resumeSubheading
+  {國立臺灣師範大學 資訊工程學系}{臺北}
+  {學士}{2021.09 -- 2025.06}
+  \resumeItemListStart
+    \resumeItem{在學表現}
+      {112 學年度優秀學生（每系 1 名）、GPA 3.82、EMI 全英語授課認證；修習中等資訊科技領域教育學程。}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{論文發表}
+  \resumeSubHeadingListStart
+    \publicationItem{Keeping Everyone in the Game: Bringing Ability-Inclusive Family Co-Play to Unmodified Console Games}
+      {Chieh-Yu Wen, \textbf{Sky Shih-Kai Hong}, Jia-Jia Liao, Ruei Ci Lai, Zi-Yun Lai, Shu-Chen Liu, Hsien-Hui Tang, and Mike Y. Chen.}
+      {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (ACM CHI 2026). \href{https://doi.org/10.1145/3772318.3791958}{DOI}}
+    \publicationItem{OmniObserve: Revealing Hidden Consensus in Online Meetings}
+      {\textbf{Shih-Kai Hong}, Ethel Yu-Tsen Hsiao, Yi-Jie Chen, Jason Zhi-Jun Chang, Elvis Dragon Mao, and Grace Yu-Chun Yen.}
+      {TAICHI 2026 第 12 屆台灣人機互動研討會，海報論文。}
+    \publicationItem{What Makes an Initial Reaction Ready for Discussion?: Multi-Persona AI Support for Stance Reflection and Writing}
+      {\textbf{Sky Shih-Kai Hong}, Mu-Tien Kuo, Wei-Ji Chen, and Dennis Wang.}
+      {TAICHI 2026 第 12 屆台灣人機互動研討會，海報論文。\href{https://arxiv.org/abs/2608.23050}{arXiv:2608.23050}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{經歷}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {國立陽明交通大學}{新竹}
+      {教學助理 --- 顏羽君教授、張永儒教授、王邦任教授}{2025.09 -- 至今}
+      \resumeItemListStart
+        \resumeItem{AI 導入軟體專案流程}
+          {CSIC30216，2026 秋季班。}
+        \resumeItem{多媒體與人機互動總整與實作}
+          {帶領 8 組、40 多位學生完成人機互動專題，從題目發想、迭代設計到期末展示。}
+        \resumeItem{人工智慧概論}
+          {共兩門：資訊學院共同課程（主開大二），以及國防資安管理碩士在職專班。}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {中央研究院 資訊科學研究所}{臺北}
+      {國科會計畫獎助生、Hinagiku 雛菊專案經理 --- 陳伶志研究員}{2025.02 -- 2025.06}
+      \resumeItemListStart
+        \resumeItem{團隊管理}
+          {帶領 6 位以上開發者，透過 60 多個 issue、200 多個 PR 推進開發，並負責時程規劃與分工。}
+        \resumeItem{教學現場}
+          {與教師進行 10 多場交流，完整驗證 Think-Pair-Share 討論流程，並依課堂需求開發功能。}
+        \resumeItem{系統}
+          {AI 合作討論學習平臺，支援即時討論與語音轉錄；SvelteKit、Firebase、GCP、Genkit。(\href{https://github.com/hinagiku-dev/Hinagiku}{GitHub} $|$ \href{https://hackmd.io/@hinagiku/wiki}{Wiki})}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {國立臺灣師範大學}{臺北}
+      {程式設計（一）、（二）教學助理 --- 紀博文教授}{2023.09 -- 2024.06}
+      \resumeItemListStart
+        \resumeItem{C 語言課程}
+  {協助 80--120 位學生；學生評價 4.9/5，為 5 位助教中最高，獲 112-1 傑出教學助理；共同舉辦 11 場 TA Hours，累計 230 多人次；以 Bash/Makefile 建立自動批改流程。}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{專案}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Weave-In --- Sea $\times$ OpenAI Codex Hackathon Taiwan 決賽入圍（5/30）}
+      {對抗團體迷思的 AI 會議工具：即時字幕、個人 Muse 助理與共享的 Omni 引導者，會主動提醒還沒被回應的異議。(\href{https://weave.nycu.ai/}{Site} $|$ \href{https://github.com/JacobLinCool/Weave-In}{GitHub})}
+    \resumeSubItem{竹梅活動觀測站 --- 清大 $\times$ 陽明交大校園活動彙整}
+      {用 LLM 從社團貼文與校園公告整理出活動，透過網站、行事曆、RSS、Telegram 與 MCP 提供，收錄 470 多個單位。(\href{https://chumei.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/chumei}{GitHub})}
+    \resumeSubItem{urtube --- BUILDMODE Gen-AI Hackathon 2026 第一名（1/160）}
+      {YouTube 觀看紀錄分析：匯入 Google Takeout 後找出常看的影片、頻道與興趣分群，並媒合品味相近的使用者。(\href{https://urtube.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/urtube}{GitHub} $|$ \href{https://hackathon2026.sitcon.org/finalists.html}{Results})}
+\resumeSubItem{Bridging the Recursive Public --- OpenAI「Democratic Inputs to AI」}
+  {代表 vTaiwan 參與 OpenAI 資助、與 Chatham House 合作的審議計畫，並到 OpenAI 總部參加跨團隊工作坊。(\href{https://vtaiwan-openai-2023.vercel.app/}{Site})}
+
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{獲獎與領導}
+  \resumeSubHeadingListStart
+    \resumeSubItem{第 19 屆旺宏科學獎 優等獎（top 20/661）}{作品《從分類到溝通——以機器學習分辨鳥鳴聲》。(\href{https://www.mxeduc.org.tw/scienceaward/history/projectDoc/19th/doc/SA19-226_final.pdf}{Report})}
+    \resumeSubItem{臺師大 GDSC 創社 Lead}
+      {帶領 24 人團隊，舉辦讀書會、學生課程與業界交流活動，累計 1000 多人次參與。}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{技能}
+\resumeSubHeadingListStart
+  \resumeSubItem{程式語言}{Python、C/C++、TypeScript/JavaScript}
+  \resumeSubItem{系統與雲端}{Linux、Git、Bash、GitHub Actions、Docker、GCP、Firebase、SvelteKit、Cloudflare R2、Genkit}
+  \resumeSubItem{研究}{人機互動、人與 AI 協作、質性研究執行、IRB 與研究材料準備}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{CJK}
+\end{document}

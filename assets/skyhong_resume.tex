@@ -8,6 +8,7 @@
 % \documentclass{ctexart}
 \documentclass[letterpaper,10pt]{article}
 
+\usepackage{cmap}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -17,6 +18,10 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{CJKutf8}
+
+% Traditional Chinese text, e.g. \zh{新文易數}
+\newcommand{\zh}[1]{\begin{CJK}{UTF8}{bsmi}#1\end{CJK}}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -92,7 +97,7 @@
   {M.S. in Data Science and Engineering (IDS\&E)}{Jun 2025 -- Expected 2027}
   \resumeItemListStart
       \resumeItem{Advisors}
-        {Profs. Grace Yu-Chun Yen and Chu-Lan Michael Kao. \href{https://nycu-haix.github.io/}{Human-AI \& Creative Computing (HAIX) Lab}.}
+        {Profs. Grace Yu-Chun Yen and Chu-Lan Michael Kao, \href{https://nycu-haix.github.io/}{HAIX Lab}. GPA 4.04/4.30 for AY2025--26 (26 credits).}
   \resumeItemListEnd
     \resumeSubheading
   {National Taiwan Normal University (NTNU)}{Taipei, Taiwan}
@@ -107,15 +112,15 @@
 %-----------PUBLICATIONS-----------------
 \section{Publications}
   \resumeSubHeadingListStart
-    \publicationItem{What Makes an Initial Reaction Ready for Discussion?: Multi-Persona AI Support for Stance Reflection and Writing}
-      {\textbf{Sky Shih-Kai Hong}, Mu-Tien Kuo, Wei-Ji Chen, and Dennis Wang.}
-      {TAICHI 2026 (12th Taiwan HCI Conference), Poster. \href{https://arxiv.org/abs/2608.23050}{arXiv:2608.23050}}
-    \publicationItem{OmniObserve: Revealing Hidden Consensus in Online Meetings}
-      {\textbf{Shih-Kai Hong}, Ethel Yu-Tsen Hsiao, Yi-Jie Chen, Jason Zhi-Jun Chang, Elvis Dragon Mao, and Grace Yu-Chun Yen.}
-      {TAICHI 2026 (12th Taiwan HCI Conference), Poster.}
     \publicationItem{Keeping Everyone in the Game: Bringing Ability-Inclusive Family Co-Play to Unmodified Console Games}
       {Chieh-Yu Wen, \textbf{Sky Shih-Kai Hong}, Jia-Jia Liao, Ruei Ci Lai, Zi-Yun Lai, Shu-Chen Liu, Hsien-Hui Tang, and Mike Y. Chen.}
       {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (ACM CHI 2026). \href{https://doi.org/10.1145/3772318.3791958}{DOI}}
+    \publicationItem{OmniObserve: Revealing Hidden Consensus in Online Meetings}
+      {\textbf{Shih-Kai Hong}, Ethel Yu-Tsen Hsiao, Yi-Jie Chen, Jason Zhi-Jun Chang, Elvis Dragon Mao, and Grace Yu-Chun Yen.}
+      {TAICHI 2026 (12th Taiwan HCI Conference), Poster.}
+    \publicationItem{What Makes an Initial Reaction Ready for Discussion?: Multi-Persona AI Support for Stance Reflection and Writing}
+      {\textbf{Sky Shih-Kai Hong}, Mu-Tien Kuo, Wei-Ji Chen, and Dennis Wang.}
+      {TAICHI 2026 (12th Taiwan HCI Conference), Poster. \href{https://arxiv.org/abs/2608.23050}{arXiv:2608.23050}}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -174,7 +179,7 @@
       {Browser meetings with live captions, private Muse assistants, and a shared Omni facilitator; top 5/30. (\href{https://weave.nycu.ai/}{Site} $|$ \href{https://github.com/JacobLinCool/Weave-In}{GitHub})}
     \resumeSubItem{Chumei Activity Observatory --- Campus Event Aggregator for NTHU \& NYCU}
       {Extracts campus events from club posts and announcements with LLMs; web, calendar/RSS, Telegram, MCP; 470+ orgs. (\href{https://chumei.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/chumei}{GitHub})}
-    \resumeSubItem{urtube --- YouTube Watch-History Analytics Platform (1st Place, BUILDMODE Gen-AI Hackathon 2026)}
+    \resumeSubItem{urtube --- YouTube Watch-History Analytics Platform (1st of 160, BUILDMODE Gen-AI Hackathon 2026)}
       {Analyzes Google Takeout watch history: top videos, channels, interest clusters, user matching. (\href{https://urtube.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/urtube}{GitHub} $|$ \href{https://hackathon2026.sitcon.org/finalists.html}{Results})}
 \resumeSubItem{Bridging the Recursive Public --- OpenAI ``Democratic Inputs to AI'' (vTaiwan)}
   {Represented vTaiwan in an OpenAI-funded deliberation project with Chatham House; joined cross-team workshops at OpenAI HQ. (\href{https://vtaiwan-openai-2023.vercel.app/}{Site})}
