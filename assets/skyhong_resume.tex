@@ -46,7 +46,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2\vspace{-2pt}}
   }
 }
 
@@ -84,6 +84,14 @@
   \href{https://skyhong.tw}{skyhong.tw} \quad \href{https://github.com/skyhong2002}{github.com/skyhong2002} & Mobile : +886-970-736-855 \\
 \end{tabular*}
 
+%-----------RESEARCH INTERESTS & SKILLS-----------------
+\section{Research Interests and Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Interests}{Large-scale news and media data: acquisition, information organization and curation, and information use.}
+    \resumeSubItem{Background}{Human-computer interaction and human-AI collaboration; qualitative studies, IRB materials, web data pipelines.}
+    \resumeSubItem{Technical}{Python, C/C++, TypeScript; Linux, Docker, GitHub Actions, GCP, Firebase, SvelteKit, Next.js, Laravel, MariaDB.}
+  \resumeSubHeadingListEnd
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -92,7 +100,7 @@
   {M.S. in Data Science and Engineering (IDS\&E)}{Jun 2025 -- Expected 2027}
   \resumeItemListStart
       \resumeItem{Advisors}
-        {Profs. Grace Yu-Chun Yen and Chu-Lan Michael Kao. \href{https://nycu-haix.github.io/}{Human-AI \& Creative Computing (HAIX) Lab}.}
+        {Profs. Grace Yu-Chun Yen and Chu-Lan Michael Kao, \href{https://nycu-haix.github.io/}{HAIX Lab}. GPA 4.04/4.30 for AY2025--26 (26 credits).}
   \resumeItemListEnd
     \resumeSubheading
   {National Taiwan Normal University (NTNU)}{Taipei, Taiwan}
@@ -118,6 +126,15 @@
       {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (ACM CHI 2026). \href{https://doi.org/10.1145/3772318.3791958}{DOI}}
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------------
+\section{News \& Media Data Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{tag.observe.tw --- Rebuild of the legacy tag.analysis.tw (2026)}
+      {Cross-source news exploration through search, keyword rankings, event and topic organization, and headline comparison; $\sim$100 media sources. (\href{https://tag.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/tag.observe.tw}{GitHub})}
+    \resumeSubItem{YouTube Board --- Rebuild of the public youtube.board.tw reports (2026)}
+      {YouTube media dashboards organizing public channels, live streams, videos, keywords, and trends for exploration and comparison; 1,100+ channels. (\href{https://youtube.observe.tw/}{Site})}
+  \resumeSubHeadingListEnd
+
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -126,36 +143,23 @@
       {National Yang Ming Chiao Tung University (NYCU)}{Hsinchu, Taiwan}
       {Teaching Assistant --- Profs. Grace Yu-Chun Yen, Stanley Yung-Ju Chang, and Dennis Wang}{Sep 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{AI-in-the-loop software projects}
-          {TA for \textit{AI-in-the-Loop in Software Project Cycle} (CSIC30216, Fall 2026).}
         \resumeItem{HCI capstone mentoring}
           {Mentored 40+ students (8 teams) in \textit{Multimedia and HCI Capstone} from scoping to showcase.}
-        \resumeItem{AI instruction support}
-          {TA for two \textit{Introduction to AI} offerings (undergraduate CS; in-service cybersecurity master's).}
+        \resumeItem{AI courses}
+          {TA for \textit{Introduction to AI} (two offerings) and \textit{AI-in-the-Loop in Software Project Cycle} (Fall 2026).}
       \resumeItemListEnd
 
     \resumeSubheading
       {Institute of Information Science, Academia Sinica (Hinagiku Team)}{Taipei, Taiwan}
       {Research Grant Student, Project Manager \& Researcher --- Prof. Ling-Jyh Chen}{Feb 2025 -- Jun 2025}
       \resumeItemListStart
-        \resumeItem{Leadership \& execution}
-          {Led 6+ developers through 60+ issues and 200+ PRs; owned roadmap and task breakdown.}
-        \resumeItem{Stakeholder-driven iteration}
-          {Ran 10+ teacher sessions; validated Think-Pair-Share; shipped classroom-driven features.}
+        \resumeItem{Leadership \& iteration}
+          {Led 6+ developers via 60+ issues and 200+ PRs; ran 10+ teacher sessions validating Think-Pair-Share.}
         \resumeItem{System \& stack}
           {Real-time discussion with voice transcription; SvelteKit, Firebase, GCP, Genkit. (\href{https://github.com/hinagiku-dev/Hinagiku}{GitHub} $|$ \href{https://hackmd.io/@hinagiku/wiki}{Wiki})}
       \resumeItemListEnd
 
 
-    % \resumeSubheading
-    %   {Open Culture Foundation (OCF)}{Taipei, Taiwan}
-    %   {Open Technology Advocacy Intern}{Feb 2024 -- Jun 2024}
-    %   \resumeItemListStart
-    %     \resumeItem{Open data research}
-    %       {Researched policy/civic-tech questions and open-data practices; turned ambiguous questions into structured analysis and recommendations. (\href{https://skyhong.tw/parliament-opendata/}{Parliament open data Article}) }
-    %     \resumeItem{Publication \& dissemination}
-    %       {Published technical write-ups and shared findings with the community to collect feedback and refine conclusions. (\href{https://skyhong.tw/ocf-intern/}{Intern reflection}) }
-    %   \resumeItemListEnd
 
     \resumeSubheading
       {National Taiwan Normal University (NTNU)}{Taipei, Taiwan}
@@ -167,36 +171,16 @@
 
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Weave-In --- AI-Facilitated Meetings Against Groupthink (Finalist, Sea $\times$ OpenAI Codex Hackathon Taiwan)}
-      {Browser meetings with live captions, private Muse assistants, and a shared Omni facilitator; top 5/30. (\href{https://weave.nycu.ai/}{Site} $|$ \href{https://github.com/JacobLinCool/Weave-In}{GitHub})}
-    \resumeSubItem{Chumei Activity Observatory --- Campus Event Aggregator for NTHU \& NYCU}
-      {Extracts campus events from club posts and announcements with LLMs; web, calendar/RSS, Telegram, MCP; 470+ orgs. (\href{https://chumei.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/chumei}{GitHub})}
-    \resumeSubItem{urtube --- YouTube Watch-History Analytics Platform (1st Place, BUILDMODE Gen-AI Hackathon 2026)}
-      {Analyzes Google Takeout watch history: top videos, channels, interest clusters, user matching. (\href{https://urtube.observe.tw/}{Site} $|$ \href{https://github.com/skyhong2002/urtube}{GitHub} $|$ \href{https://hackathon2026.sitcon.org/finalists.html}{Results})}
-\resumeSubItem{Bridging the Recursive Public --- OpenAI ``Democratic Inputs to AI'' (vTaiwan)}
-  {Represented vTaiwan in an OpenAI-funded deliberation project with Chatham House; joined cross-team workshops at OpenAI HQ. (\href{https://vtaiwan-openai-2023.vercel.app/}{Site})}
-
-
-  \resumeSubHeadingListEnd
-
 %-----------ACHIEVEMENTS-----------------
-\section{Achievements and Leadership}
+\section{Awards, Leadership, and Service}
   \resumeSubHeadingListStart
-    \resumeSubItem{Macronix Science Award (19th)}{Excellence Award (Top 20/661); ML classification of white-eye bird calls. (\href{https://www.mxeduc.org.tw/scienceaward/history/projectDoc/19th/doc/SA19-226_final.pdf}{Report})}
-    \resumeSubItem{Founder \& Lead, Google Developer Student Club (GDSC) NTNU}
-      {Led a 24-member team; study groups, courses, industry events (1000+ attendances).}
+    \resumeSubItem{Awards}
+      {BUILDMODE Gen-AI Hackathon 2026, 1st/160 (\href{https://urtube.observe.tw/}{urtube}); Sea $\times$ OpenAI Codex Hackathon 2026, Finalist (\href{https://weave.nycu.ai/}{Weave-In}); Macronix Science Award, Excellence, Top 20/661; g0v Zero Time School Incubator: UniCourse, Winning Team, Top 5/19 (3rd); rep0rter, Selected Team, Top 11/23 (4th).}
+    \resumeSubItem{Leadership}
+      {Founder \& Lead, GDSC NTNU (24-member team; 1000+ attendances); President, NTNU CSIE Student Association (54th); Founding President, NYCU Bamboo Melody Harmonica Club; President, Macronix Science Award Alumni Association (12th).}
+    \resumeSubItem{Service \& fellowships}
+      {Open Technology Advocacy Intern, \href{https://skyhong.tw/ocf-intern/}{Open Culture Foundation} (Feb--Jun 2024); ACM CHI 2026 Student Volunteer; Editor-in-Chief, SITCON Camp 2023 \& SITCON 2024; SITCON Program Committee 2025, Program Assistant Lead \& Speaker 2026; Facing the Ocean Meet \& Hack: Jeju 2023 Fellowship, Seoul 2026 Student Grant; OpenAI Democratic Inputs to AI (vTaiwan).}
   \resumeSubHeadingListEnd
-
-%--------SKILLS------------
-\section{Skills}
-\resumeSubHeadingListStart
-  \resumeSubItem{Languages}{Python, C/C++, TypeScript/JavaScript}
-  \resumeSubItem{Systems \& Cloud}{Linux, Git, Bash, GitHub Actions, Docker, GCP, Firebase, SvelteKit, Cloudflare R2, Genkit}
-  \resumeSubItem{Research}{Human-computer interaction, human-AI collaboration, qualitative study ops, IRB/study materials}
-\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
